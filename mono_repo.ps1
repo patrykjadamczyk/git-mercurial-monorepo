@@ -60,7 +60,7 @@ function Commit-MonoRepo {
         Write-Progress -Activity "$_process" -Status "$_percent %" -Id 1 -PercentComplete $_percent -CurrentOperation "$_m";
 
         Start-Sleep -Milliseconds 500;
-        hg add;
+        hg addremove;
         Start-Sleep -Milliseconds 500;
 
 
